@@ -1,0 +1,9 @@
+pyTelegramBotAPI
+pywin32
+python-dotenv
+typing-extensions
+loguru
+aiohttp
+schedule
+cryptography
+pytest
