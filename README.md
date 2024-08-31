@@ -57,7 +57,7 @@
 
       - В директории с вашим скриптом выполните команду для создания `.exe` файла:
         ```bash
-        pyinstaller --onefile --windowed bot.py
+        pyinstaller --onefile --windowed bot_script.py
         ```
       - После выполнения этой команды `.exe` файл появится в папке `dist`.
 
