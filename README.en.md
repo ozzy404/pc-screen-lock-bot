@@ -38,26 +38,34 @@ Make sure you have Python installed. You can download it from [python.org](https
 
 ## Setup
 
-1. **Create a Telegram Bot:**
+1. **Creating a Telegram Bot:**
 
    - Open Telegram and find [BotFather](https://t.me/botfather).
-   - Send the command `/start` to begin.
+   - Send the `/start` command to begin.
    - Create a new bot using the `/newbot` command and follow the instructions.
    - Copy the token you receive and paste it into the `bot_script.py` file.
 
-2. **Get Your Telegram ID:**
+2. **Getting Your Telegram ID:**
 
    - Find [userinfobot](https://t.me/userinfobot) on Telegram.
-   - Send the command `/start` to get your ID.
+   - Send the `/start` command to get your ID.
    - Copy the ID and paste it into the `bot_script.py` file.
 
-3. **Setup Auto-Start:**
+3. **Setting Up Autostart:**
 
-   - Specify the correct path to your script in the provided `.bat` file.
-   - Place the `.bat` file in the Windows Startup folder to have it run on startup:
+   1. **Creating an .exe File:**
 
-     - Press Win + R, type `shell:startup`, and press Enter.
-     - Copy your `.bat` file into this folder.
+      - In the directory with your script, run the following command to create an `.exe` file:
+        ```bash
+        pyinstaller --onefile --windowed bot.py
+        ```
+      - After running this command, the `.exe` file will appear in the `dist` folder.
+
+   2. **Adding to Autostart:**
+
+      - Open `Win + R`, type `shell:startup`, and press Enter.
+      - Copy the `.exe` file into the opened startup folder.
+      - Now, your bot will start automatically when the system boots.
 
 ## Available Documentation Versions
 
