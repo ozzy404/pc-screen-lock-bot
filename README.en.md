@@ -57,7 +57,7 @@ Make sure you have Python installed. You can download it from [python.org](https
 
       - In the directory with your script, run the following command to create an `.exe` file:
         ```bash
-        pyinstaller --onefile --windowed bot.py
+        pyinstaller --onefile --windowed bot_script.py
         ```
       - After running this command, the `.exe` file will appear in the `dist` folder.
 
